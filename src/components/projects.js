@@ -46,11 +46,11 @@ class Projects extends Component {
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                     <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>React Project - Portfolio</CardTitle>
                     <CardText>
-                        My software engineering porfolio. Created with React.js.
+                        My Portfolio, an application in which I can track my progress by listing past projects, as well as letting others get a hold of them as well. Created with React.js and the React-MDL library.
                     </CardText>
                     <CardActions border>
-                        <Button href="https://github.com/swedhag/Librari" colored target="_blank">GitHub</Button>
-                        <Button href="https://librari-41dab.firebaseapp.com/" colored target="_blank">Live Demo</Button>
+                        <Button href="https://github.com/swedhag/portfolio" colored target="_blank">GitHub</Button>
+                        <Button href="https://myportfolio-4a48b.firebaseapp.com/" colored target="_blank">Live Demo</Button>
                     </CardActions>
                     <CardMenu style={{ color: '#fff' }}>
                         <IconButton name="share" />
@@ -64,9 +64,9 @@ class Projects extends Component {
                 <div className="projects-grid">
                     {/*Project 1 - Students Groupings*/}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://raw.githubusercontent.com/d3/d3-logo/master/d3.png) center / cover' }}>D3 Project - Student Groupings</CardTitle>
+                        <CardTitle style={{ color: '#000', height: '176px', background: 'url(https://raw.githubusercontent.com/d3/d3-logo/master/d3.png) center / cover' }}>D3 Project - Student Groupings</CardTitle>
                         <CardText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec varius dui, in luctus leo. Vestibulum lobortis dui at finibus auctor. Quisque lorem massa, gravida eu neque sed, rhoncus vulputate lacus.
+                           Application made for grouping students into project groups for the course DH2321 Information Visualization. The application was created using JavaScript and D3.js.
                         </CardText>
                         <CardActions border>
                             <Button href="https://github.com/swedhag/dh2321-project1" colored target="_blank">GitHub</Button>
@@ -85,8 +85,6 @@ class Projects extends Component {
             )
         }
     }
-
-
 
     render() {
         return (

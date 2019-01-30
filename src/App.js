@@ -9,22 +9,21 @@ class App extends Component {
   render() {
     return (
         <div className="demo-big-content">
-            <Layout class=".mdl-layout--no-desktop-drawer-button">
-                <Header className="header-color" title="MY PORTFOLIO" scroll>
-                    <Navigation>
-                        <Link to="/">HOME</Link>
-                        <Link to="/resume">RESUME</Link>
-                        <Link to="/aboutme">ABOUT ME</Link>
-                        <Link to="/projects">PROJECTS</Link>
-                        <Link to="/contact">CONTACT</Link>
+            <Layout className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <Header className="header-color" title={< Link style={{textDecoration:'none', color:'white'}} to ="/"> MY PORTFOLIO </Link> } scroll>
+                    <Navigation className="mdl-layout--large-screen-only">
+                        <Link to="/resume">Resume</Link>
+                        <Link to="/aboutme">About Me</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact</Link>
                     </Navigation>
                 </Header>
-                <Drawer title="MY PORTFOLIO">
+                <Drawer className="mdl-layout--small-screen-only" title={< Link style={{ textDecoration: 'none', color: 'black' }} to="/"> MY PORTFOLIO </Link>}>
                     <Navigation>
-                        <Link to="/resume">RESUME</Link>
-                        <Link to="/aboutme">ABOUT ME</Link>
-                        <Link to="/projects">PROJECTS</Link>
-                        <Link to="/contact">CONTACT</Link>
+                        <Link to="/resume">Resume</Link>
+                        <Link to="/aboutme">About Me</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact</Link>
                     </Navigation>
                 </Drawer>
                 <Content>

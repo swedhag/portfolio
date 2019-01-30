@@ -1,10 +1,20 @@
-* {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+*, body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .header-color {
     background: #141E30; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-title {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    width: 75%;
+    text-align: left;
 }
 
 .landing-grid {
@@ -69,4 +79,53 @@
 
 .projects-grid {
     display: flex;
+}
+
+.contact-body {
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contact-grid {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    color: black;
+    margin-bottom: 100px;
+}
+/*
+.contact-grid h2, i {
+    font-family: 'Anton', sans-serif;
+}
+.contact-grid p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+*/
+
+
+.contact-grid hr {
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-list i {
+    font-size: 66px;
+    padding-right: 5rem;
+}
+
+.resume-right-col {
+    background: #27221f;
+    color: white;
+    padding: 2em;
 }
