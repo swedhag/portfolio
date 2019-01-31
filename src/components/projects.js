@@ -65,7 +65,7 @@ class Projects extends Component {
     render() {
         return (
             <div className="category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId => this.setState({ activeTab: tabId }))} ripple>
+                <Tabs style={{backgroundColor: 'white'}} activeTab={this.state.activeTab} onChange={(tabId => this.setState({ activeTab: tabId }))} ripple>
                     <Tab style={{fontWeight:'bold'}}>Web Development</Tab>
                     <Tab style={{fontWeight:'bold'}}>Data Visualization</Tab>
                     <Tab style={{fontWeight:'bold'}}>Placeholder2</Tab>

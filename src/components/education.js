@@ -4,11 +4,11 @@ import { Grid, Cell } from 'react-mdl';
 class Education extends Component {
     render() {
         return (
-            <Grid>
-                <Cell col={2}>
+            <Grid style={{paddingBottom: '0px', paddingTop: '0px'}}>
+                <Cell style={{marginBottom: '0px', marginTop: '0px', paddingBottom: '0px'}} col={2}>
                     <p>{this.props.startYear} - {this.props.endYear}</p>
                 </Cell>
-                <Cell col={10}>
+                <Cell style={{marginBottom: '0px', marginTop: '0px', paddingBottom: '0px'}} col={10}>
                     <h4 style={{ marginTop: '0px' }}>{this.props.schoolName}</h4>
                     <p>{this.props.schoolDescription}</p>
                 </Cell>
