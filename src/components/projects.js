@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 import Project from './project';
 
 class Projects extends Component {
@@ -66,15 +66,17 @@ class Projects extends Component {
         return (
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId => this.setState({ activeTab: tabId }))} ripple>
-                    <Tab>Web Development</Tab>
-                    <Tab>Data Visualization</Tab>
-                    <Tab>Placeholder2</Tab>
+                    <Tab style={{fontWeight:'bold'}}>Web Development</Tab>
+                    <Tab style={{fontWeight:'bold'}}>Data Visualization</Tab>
+                    <Tab style={{fontWeight:'bold'}}>Placeholder2</Tab>
                 </Tabs>
-                <Grid>
-                    <Cell col={12}>
-                        {this.toggleCategories()}
-                    </Cell>
-                </Grid>
+                <div className="projects-container">
+                    <Grid className="projects-grid">
+                        <Cell col={12}>
+                            {this.toggleCategories()}
+                        </Cell>
+                    </Grid>
+                </div>
             </div>
         )
     }

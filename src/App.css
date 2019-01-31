@@ -76,9 +76,20 @@
     padding: 8px;
 }
 
-
 .projects-grid {
+    margin-top: 3%;
     display: flex;
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-container {
+    width: 100%;
+    height: 100vh;
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contact-body {
@@ -124,9 +135,20 @@
     padding-right: 5rem;
 }
 
+.resume-grid {
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.resume-left-col {
+    background: rgb(250,250,250, 0.5);
+    border-radius: 10px;
+}
 .resume-right-col {
-    background: #27221f;
-    box-shadow: -10px 10px 5px grey;
-    color: white;
+    background: rgb(248,236,194, 0.8); /*#27221f */
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: -10px 10px 5px rgb(250,250,250, 0.1);
+    color: black;
     padding: 2em;
 }

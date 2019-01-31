@@ -6,19 +6,18 @@ import Skill from './skills';
 class Resume extends Component {
     render() {
         return (
-            <div>
+            <div className="resume-grid">
                 <Grid>
-                    <Cell col={4}>
-                        <div style={{}}>
-                            <img src="https://librari-41dab.firebaseapp.com/static/media/calle.27c30049.png" alt="avatar" className="avatar-img" style={{paddingTop: '5%', display:'block', marginLeft:'auto', marginRight:'auto'}}/>
-                            <h2 style={{ paddingTop: '2em', paddingLeft:"16px" }}>Carl Svedhag</h2>
-                            <h4 style={{ color: 'grey', paddingLeft:"16px" }}>Programmer</h4>
-                            <hr style={{ borderTop: '3px solid �833fb2', width: '50%', marginLeft:"16px"}} />
+                    <Cell className="resume-left-col" col={4}>
+                        <Cell col={7} style={{ display:'block', float: 'left'}}>
+                            <h2 style={{ paddingTop: '3%', paddingLeft:"16px", display: 'block', float:'left' }}>Carl Svedhag</h2>
+                            <h4 style={{ color: 'black', paddingLeft:"16px" }}>Programmer</h4>
+                            <hr style={{ borderTop: '3px solid black', width: '50%', marginLeft:"16px"}} />
                             <p style={{ paddingLeft:"16px", width: '80%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor facilisis scelerisque. Donec ornare molestie dui in semper. Pellentesque rhoncus nibh et tincidunt pharetra. Fusce aliquam, dolor ac tempus maximus, ligula velit sodales eros, a eleifend neque risus a lorem. Maecenas gravida ex ut aliquet maximus. Integer dictum nisl ac lorem ultrices ultricies.
                             </p>
-                            <hr style={{ borderTop: '3px solid �833fb2', width: '50%', marginLeft:"16px"}} />
+                            <hr style={{ borderTop: '3px solid black', width: '50%', marginLeft:"16px"}} />
                             <List>
-                                <ListItem style={{paddding: '0px'}}>
+                                <ListItem style={{paddingLeft: '20px'}}>
                                     <ListItemContent style={{fontSize: '20px'}}>
                                         <i className="fa fa-location-arrow" style={{display:'block', float:'left', marginRight: '15px'}} aria-hidden="true"/>
                                         <p style={{display:'block', float:'left'}}>Brinellv�gen 8, 114 28 Stockholm</p>
@@ -43,8 +42,11 @@ class Resume extends Component {
                                     </ListItemContent>
                                 </ListItem>
                             </List>
-                            <hr style={{ borderTop: '3px solid �833fb2', width: '50%', marginLeft:"16px"}} />
-                        </div>
+                            <hr style={{ borderTop: '3px solid black', width: '50%', marginLeft:"16px"}} />
+                        </Cell>
+                        <Cell col={5} style={{display:'block', float: 'left'}}>
+                        <img src="https://librari-41dab.firebaseapp.com/static/media/calle.27c30049.png" alt="avatar" className="avatar-img" style={{paddingTop: '5%', display:'block', width:'200px', height:'200px', marginLeft:'auto', marginRight:'auto'}}/>
+                        </Cell>  
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
                         <h2 style={{ fontSize: '36px', paddingLeft:"16px" }}>Education</h2>
@@ -61,7 +63,7 @@ class Resume extends Component {
                             schoolName="KTH (Royal Institute of Technology)"
                             schoolDescription="Masters Degree in Computer Science with Specialization in Media Technology"
                         />
-                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <hr style={{ borderTop: '3px dotted grey' }} />
                         <h2 style={{ fontSize: '36px', paddingLeft:"16px" }}>Employers</h2>
                         <Employer
                             startYear="Jan 2016"
@@ -75,7 +77,7 @@ class Resume extends Component {
                             jobName="Ivarsudde Kollo"
                             jobDescription="A summer camp located in the archipelago of the Swedish town Norrt�lje. Tasks consisted of everything, from setting up campsites and cooking lunch for 60 people, to putting homesick kids to bed. A job demanding of many responsibilities. However, the responsibilites may vary based on the day to day activities."
                         />
-                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <hr style={{ borderTop: '3px dotted grey' }} />
                         <h2 style={{ fontSize: '36px', paddingLeft:"16px" }}>Skills</h2>
                         <Skill
                             skill="HTML/CSS"
