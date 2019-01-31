@@ -5,7 +5,6 @@ class LandingPage extends Component {
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
-
                 <Grid className="landing-grid">
                     <Cell col={12}>
                         <img src="https://librari-41dab.firebaseapp.com/static/media/calle.27c30049.png" alt="avatar" className="avatar-img" />
@@ -19,9 +18,12 @@ class LandingPage extends Component {
                                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square"  aria-hidden="true" />
                                 </a>
-
+                                {/* Facebook */}
+                                <a href="http://facebook.com" rel="noopener noreferrer" target="_blank">
+                                    <i className="fa fa-facebook-square"   aria-hidden="true" />
+                                </a>
                                 {/* GitHub */}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://github.com/swedhag" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
 
